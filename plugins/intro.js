@@ -4,7 +4,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 https://chat.whatsapp.com/H7iwUtSGtFZI8q0Xf4tbpz }, { quoted: m })
 	}
 
-handler.help = ['bader']
+handler.help = ['intro']
 handler.tags = ['tools']
 handler.command = /^(intro)$/i
 handler.limit = false
