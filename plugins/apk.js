@@ -43,8 +43,8 @@ const handler = async (m, { conn, usedPrefix, command, text }) => {
   }
 };
 
-handler.tags = ['tools'];
+handler.tags = ['ai'];
 handler.help = ['apk'];
-handler.command = /^(apk|apkdl|dapk2|aptoide|aptoidedl)$/i;
-
+handler.command = /^(apk)$/i;
+handler.limit = false
 export default handler;
