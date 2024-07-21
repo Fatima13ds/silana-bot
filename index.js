@@ -134,7 +134,7 @@ const totalFoldersAndFiles = await getTotalFoldersAndFiles(pluginsFolder);
 ┣ Feature: ${chalk.white(totalFoldersAndFiles.files)} Feature
 ╰──⎔⎔ 
 
-⎔──⎔⎔ Creator: ${chalk.bold.cyan('NOUREDDINE OUAFY')} ⎔⎔──⎔`)
+⎔──⎔⎔ Creator: ${chalk.bold.cyan('SASUKE TECH')} ⎔⎔──⎔`)
     
   } catch (err) {
     console.error(chalk.red(`Can not read File package.json: ${err}`));
