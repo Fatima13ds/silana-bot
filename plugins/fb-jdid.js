@@ -27,9 +27,7 @@ let handler = async (m, { conn, args }) => {
 
             const videoLink = result.result.url.isHdAvailable ? result.result.url.urls[0].hd : result.result.url.urls[1].sd;
             const caption = `
-*Title*: ${result.result.title || 'No title'}
-
-> *تابعني على إنستجرام من هنا* \n https://instagram.com/7vkoq`;
+*Title*: ${result.result.title || 'No title'};
 
             const videoBuffer = await fetch(videoLink).then(res => res.buffer());
 
@@ -72,8 +70,8 @@ let handler = async (m, { conn, args }) => {
 
 handler.help = ['fb <url>'];
 handler.tags = ['downloader'];
-handler.command = /^(fbdownload|facebook|fb(dl)?)$/i;
-
+handler.command = /^(fb2|fb(dl)?)$/i;
+handler.limit = false
 handler.register = false;
 
 export default handler;
