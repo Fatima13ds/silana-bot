@@ -48,7 +48,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 };
 
-handler.command = ['فيديو', 'قرآن', 'quran'];
+handler.command = ['قرآن', 'quran'];
 handler.help = ['help-video'];
-handler.tags = ['islam'];
+handler.tags = ['tools'];
 export default handler;
